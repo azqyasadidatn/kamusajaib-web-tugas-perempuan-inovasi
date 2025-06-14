@@ -1,0 +1,287 @@
+/* UMUM BERLAKU KESELURUHAN */
+*{
+    margin: 0;
+    padding: 0;
+ }
+body{
+    background-color: var(--background);
+}
+:root {
+    --background-mist-blue: #dff3f1d0;  /* Biru muda agak kehijauan */
+    --background: #FAF3E0;
+    --backgound-navbar: #B3795C;         /* Coklat bata lembut (kayak gerabah) */
+
+    --btncolor1: #c97b5d;       /* sunset coral */
+    --btncolor: #c6a079;        /* clay beige */
+
+    --accent-1: #fff5e7;   /* 1. Dusty Blue */
+    --accent-2: #BFA2DB;   /* 2. Muted Lavender */
+    --accent-3: #8f654fd9;   /* 3. Terracotta Muda */
+    --accent-4: #ffffff ;   /* 4. Soft Blush Pink */
+    --accent-6:#F6D6D6;
+    --accent-5: #A89F91;   /* 5. Warm Grey */
+    --sc-background: #f0caa5e0;        /* clay beige */
+
+
+    /* DARK MODE */
+    --color-dark: #2D3436;       /* Abu kehitaman */
+    --color-deep-night: #1B1B2F; /* Biru sangat gelap */
+    --color-darkmode:#5f472efa;
+
+    --font-color:#070707;
+    --font-color-2: #FAF3E0;        /* warm cream */
+    --font-color-3:  #2d3436c6;       /* earthy brown */
+    --font-color-4: #3c3024;              /* soft cocoa */
+    --font-color-5: #F5F3EF;            /* pale bone */
+    --font-color-6: #d2a67a;            /* taupe grey */
+
+  }
+/* Button umum */
+
+ button{
+    padding:0.9vh;
+    margin-top: 1hv;
+    margin-bottom: 1vh;
+    background-color: var(--btncolor);
+    color: var(--font-color-2);
+    box-shadow:0 2px 5px rgb(34, 26, 20);
+    font-weight: bold;
+    font-size: 2.5vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+
+}
+button:hover{
+    background-color: var(--accent-5);
+} 
+
+
+/* Navbar */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--backgound-navbar);
+}
+nav h2{
+    margin: 0;
+    padding: o;
+    text-shadow:  0 2px 3px #c6a079;
+    color: var(--font-color-4);
+}
+nav ul li{
+    list-style: none;
+}
+#nav-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--font-color-2);
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+nav ul li  a:hover{
+    background-color:#a89f918a;
+    color: var(--color-darkmode);
+    border-radius: 3px;
+    padding: 1.2vh;
+}
+
+
+
+/* ======== KONTEN DAN ISI WEB ======== */
+.konten{
+    display: flex;
+    margin: 2.6vh;
+    flex-direction: column;
+    min-height: 100vh;
+    height:auto;  
+
+}
+.form-box{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 3vh;
+    margin-bottom: 50vh;
+    width: 80%;
+    max-width: 400px;
+    padding: 3vw;
+    background-color: var(--sc-background);
+    box-shadow: 0 3px 4px #3c3024e8;
+    border-radius: 20px;
+}
+input {
+    width: 90%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  h2{
+    color: var(--color-darkmode);
+    font-family: "Ancizar Sans",sans-serif;
+    font-style: normal;
+    text-shadow:0 2px 5px rgb(34, 26, 20);
+    margin-bottom: 1rem;
+}
+
+#submit-form{
+    margin: 2vh;
+}
+#check{
+    font-size:2vh;
+    width: 90%;
+    margin-bottom: 0.8rem;
+}
+#status{
+    width: 3vh;
+    height: 3vh;
+    border: 2px solid #999;
+}
+
+.konten-awal{
+    display: flex;
+    margin-right: 2vh;
+    margin-top: 2vh;
+    flex-direction: row;
+}
+.pembuka{
+    width: 48%;
+}
+.pembuka h3{
+    color: var(--font-color-4);
+    font-size: 4vh;
+    margin-bottom: 1rem;
+
+}
+
+.gambar{
+    width: 52%;
+    margin: 0;
+    padding: 0;
+}
+#peta {
+    width: 90%;
+    height: auto;
+}
+/*===== konten utama =====*/
+.teks{
+    gap: 1vh;
+    margin: 1.6vw;
+}
+.teks h3{
+    size: 1.2vh;
+    padding: 1vw;
+}
+.teks p{
+   font-size: 3vh;
+   margin-bottom: 0.5vh;
+}
+/*======== slider ======*/
+.slide-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    padding: 1rem;
+}
+.card-container{
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 2vw;
+    padding: 1rem 2rem;
+}
+.card{
+    flex: 0 0 auto ;
+    width: 250px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 10px rgb(141, 105, 97);
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+  }
+.card-top{
+    height: 100px;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 6px 10px rgba(141, 105, 97, 0.788);
+
+}
+.card:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
+  
+.card-body{
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+  }
+  .card-body h4{
+    margin: 0.5rem 0;
+  }
+  .card-body p{
+    font-size: 0.78rem;
+    color: #555;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+/*======= footer =======*/
+footer{
+    display: flex;
+    padding: 2vh;
+    gap: 5vw;
+    background-color: var(--accent-3);
+    height: 20vh;
+    color: var(--font-color);
+}
+footer a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/* DARK MODE */
+body.dark-mode{
+    background-color: var(--color-darkmode);
+    color: var(--font-color-5);
+}
+body.dark-mode nav{
+    background-color: #302112;
+}
+body.dark-mode nav h2{
+    color: var(--accent-4);
+}
+body.dark-mode h3{
+    color: var(--font-color-5);
+    text-shadow: 0 2px 4px #d2a67a;
+}
+body.dark-mode h4{
+    color: var(--font-color-3);
+    text-shadow: 0 2px 4px #d2a67a;
+}
+body.dark-mode h2{
+    color: var(--font-color-5);
+    text-shadow: 0 2px 4px #d2a67a;
+}
+body.dark-mode .form-box{
+    background-color: #4e3b27;
+}

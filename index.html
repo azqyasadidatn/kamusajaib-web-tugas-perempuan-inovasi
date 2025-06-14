@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Tambahkan kode kalian di sini -->
+    <!-- navbar -->
+    <nav id="navbar-utama" >
+        <h2>KamusAjab</h2>
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kamus</a></li>
+            <li><a href="#">Kuis</a></li>
+            <li><a onclick="darkMode()">Mode</a></li>
+
+        </ul>     
+        <div class="btnwrap">
+            <button class="lft btn" id="loginBtn" onclick="showSection('login')">Login</button>
+            <button class="lft btn" id="registerBtn"onclick="showSection('register')">Register</button>
+            
+        </div>
+    </nav>
+    <!-- navbar and -->
+ <!-- register form -->
+ <form id="register" class="form-box">
+    <h2>Register</h2>
+    <input id="name" type="text" placeholder="Nama Lengkap anda" required>
+    <input id="city" type="text" placeholder="Asal Kota/Kabupaten anda" required>
+    <input id="email" type="email" placeholder="Email" required>
+    <input id="zip-code" type="number" placeholder="nomor ponsel" required>
+    <label id="check">Dengan ini saya menyatakan data yang diisi pada form adalah benar dan sesuai</label>
+    <input id="status" type="checkbox"> 
+    <button id="submit-form" type="submit">Submit</button>
+    <div id="warning"></div>
+</form>
+    <!-- isi web -->
+    <div class="konten">
+        <div class="konten-awal">
+            <div class="gambar">
+                <img src="background.png" id="peta" alt="peta indonesia">
+            </div>
+            <div class="pembuka">
+                <h3>Bahasa Daerah, Jiwa Nusantara!</h3>
+                <p id="description">
+                    Website ini akan memuat banyak bahasa daerah di indonesia. Melalui web ini
+                    pengguna bisa mengenal bahasa dari berbagai daerah. Mengambil tema minat baca dan 
+                    literasi anak dan remaja, melalui web ini diharap bisa mengenalkan budaya dan ragam bahasa yang ada di indonesia
+                    Melalui fitur yang diharap dapat menarik minat remaja dan anak anak untuk menggunakannya. 
+                    Website ini tentu tidak bisa menampung dan menampilkan seluruh bahasa daerah di indonesia yang menurut data 
+                    Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbud Ristek), ada sekitar 718 bahasa daerah yang ada di Indonesia.
+                </p>
+            </div> 
+        </div>
+        <div class="konten-utama">
+            <div class="teks">
+            <!--paragraf 1  -->
+                <h3>Satu Negeri, Ratusan Bahasa, Satu Cinta</h3>
+                <p>Tahukah kamu? Indonesia memiliki lebih dari 700 bahasa daerah yang tersebar dari Sabang sampai Merauke.
+                Setiap bahasa bukan hanya alat komunikasi, tapi juga cermin budaya, sejarah, dan cara hidup masyarakatnya. 
+                Sayangnya, banyak bahasa daerah kini terancam punah.</p>
+                <p><em> Belajar dan memahami bahasa daerah<b> bukan</b> soal nostalgia semata</em> ini adalah langkah nyata 
+                untuk menjaga jati diri bangsa. Saat kita memahami bahasa daerah, kita ikut merawat kebudayaan, 
+                mempererat hubungan antar generasi, dan memperkaya wawasan kebhinekaan.</p>
+            <!-- paragraf 2 -->
+             <h3>Pelajari. Pahami. Lestarikan.</h3>
+              <p>Indonesia bukan sekadar negara kepulauan—kita adalah rumah bagi ratusan bahasa daerah yang menyimpan 
+                kekayaan budaya luar biasa. Dari halusnya Bahasa Jawa, hangatnya logat Sunda, sampai kuatnya aksen Batak dan kentalnya
+                nuansa Melayu—semua punya cerita, makna, dan nilai yang layak dikenali.</p>  
+            </div>
+
+            <div class="slide-header">
+                <button class="slider-btn" onclick="scrolSlide(-1)"> ◀ </button>
+                <h2>Bahasa Daerah</h2>
+                <button class="slider-btn" onclick="scrolSlide(1)"> ▶ </button>
+            </div>
+
+            <div class="card-container" id="card-container">
+                <div class="card">
+                    <div class="card-top" style="background-color: #BFA2DB;">
+                    </div>
+                    <div class="card-body">
+                        <h4>Jawa</h4>
+                        <p>Bahasa ini digunakan oleh puluhan juta orang, menjadikannya salah satu yang terbesar di Indonesia.
+                        Memiliki tingkat tutur seperti ngoko, krama, dan krama inggil, Bahasa Jawa mencerminkan rasa hormat dan tata krama dalam masyarakatnya.
+                        Tak hanya sebagai alat komunikasi, bahasa ini juga hadir dalam sastra dan tembang-tembang klasik.</p>
+                    </div>
+                </div><div class="card">
+                    <div class="card-top" style="background-color: #40342B;">
+                    </div>
+                    <div class="card-body">
+                        <h4>Sunda</h4>
+                        <p>Berakar dari tanah Parahyangan, Bahasa Sunda terdengar lembut dan penuh kehangatan. Kosakatanya mencerminkan kedekatan
+                            dengan alam dan kehidupan sehari-hari yang sederhana. 
+                            Dalam percakapan, bahasa ini juga mengenal tingkatan, meskipun lebih sederhana dari bahasa Jawa.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top" style="background-color: #444153;">
+                    </div>
+                    <div class="card-body">
+                        <h4>Dani(Papua)</h4>
+                        <p>alah satu dari ratusan bahasa asli Papua, digunakan oleh masyarakat Lembah Baliem. Bahasa Dani menggambarkan
+                            hubungan erat antara manusia dan alam sekitarnya. Kaya istilah untuk alam, tradisi,
+                            dan relasi sosial, ia menjadi saksi hidup dari budaya leluhur yang masih dijaga.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top" style="background-color: #8B4513;"> 
+                    </div>
+                    <div class="card-body">
+                      <h4>Minangkabau (Sumatra)</h4>
+                      <p>Bahasa Minangkabau kaya akan pepatah dan filosofi hidup, mencerminkan nilai kekerabatan 
+                        matrilineal yang unik. Ia digunakan dalam adat, tradisi sastra lisan, dan pengambilan 
+                        keputusan keluarga. Setiap ungkapan sarat akan kebijaksanaan lokal serta nuansa 
+                        kebersamaan Sumatra Barat.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-top" style="background-color: #556B2F;"> 
+                    </div>
+                    <div class="card-body">
+                      <h4>Kenyah (Kalimantan)</h4>
+                      <p>Bahasa Kenyah digunakan oleh suku Dayak di pedalaman Kalimantan Timur dan Utara. 
+                        Dengan banyak dialek lokal serta sistem kekerabatan yang kompleks, bahasa ini menyimpan 
+                        pengetahuan tradisional tentang hutan, ritual, dan adat istiadat. Ia adalah identitas kuat 
+                        komunitas Kenyah sekaligus jendela budaya Borneo.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-top" style="background-color: #6A5ACD;"> 
+                    </div>
+                    <div class="card-body">
+                      <h4>Makassarese (Sulawesi)</h4>
+                      <p>Sebagai bahasa utama di Sulawesi Selatan, Makassarese digunakan dalam percakapan harian, 
+                        sastra, dan upacara adat. Memiliki tingkatan tutur untuk menghormati lawan bicara, ia 
+                        memperlihatkan adab dan kesopanan masyarakat. Syair dan lisan lokal turut menghidupkan 
+                        budaya tradisional.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-top" style="background-color: #D2691E;">
+                    </div>
+                    <div class="card-body">
+                      <h4>Hawu (NTT)</h4>
+                      <p>Bahasa Hawu dituturkan oleh masyarakat Pulau Savu dan Raijua, bagian dari rumpun 
+                        Austronesia. Gayanya khas, dengan ungkapan seperti “lii Hawu” yang berarti “bahasa kami”. 
+                        Bahasa ini menjadi jembatan budaya antar pulau kecil dan mempertahankan identitas pesisir 
+                        Nusa Tenggara Timur.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-top" style="background-color: #CD5C5C;"> 
+                    </div>
+                    <div class="card-body">
+                      <h4>Sasak (NTB)</h4>
+                      <p>Ada di Lombok dengan dialek khas dan digunakan dalam ritual adat, sastra lisan, 
+                        serta kehidupan sehari-hari. Bahasa Sasak kaya kosa kata untuk tradisi lokal seperti 
+                        kekawin dan nyanyian istiadat. Ia menjadi simbol kuat budaya Sasak yang berbeda dari Bali 
+                        dan NTB lainnya.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-top" style="background-color: #4682B4;">
+                    </div>
+                    <div class="card-body">
+                      <h4>Alune (Maluku)</h4>
+                      <p>Bahasa Alune, satu dari banyak “bahasa tanah” di Maluku, umum di Pulau Seram. 
+                        Ia dipakai dalam upacara adat seperti pela panas, perdagangan komunal, dan cerita rakyat. 
+                        Bahasa ini merefleksikan hubungan harmonis antara komunitas, tanah, dan laut Maluku.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-top" style="background-color: #2F4F4F;"> <
+                    </div>
+                    <div class="card-body">
+                      <h4>Abun (Papua)</h4>
+                      <p>Bahasa Abun dituturkan di wilayah Papua Barat, terutama di Kampung Werur.
+                        Termasuk dalam rumpun bahasa Papua, bahasa ini masih digunakan aktif dalam 
+                        komunikasi sehari-hari. Ia mencerminkan kedekatan komunitas lokal dengan alam dan 
+                        tradisi pesisir Papua Barat.</p>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="teks">
+                <h3 >Bahasa-bahasa ini hanya sebagian kecil dari mozaik linguistik Nusantara </h3>
+                
+                  <p>Setiap bahasa bukan hanya alat komunikasi, tapi juga penyimpan sejarah, tradisi, dan kearifan lokal. 
+                    Dengan mempelajarinya, kita ikut menjaga warisan budaya, memperkaya jiwa bangsa, 
+                    dan mencegah hilangnya identitas yang rentan punah.Masing-masing bahasa adalah harta tak ternilai yang perlu dikenali, 
+                    dipelajari, dan dilestarikan agar tidak tenggelam oleh zaman.
+                    Lewat web ini, kamu bisa mengenal berbagai bahasa daerah dari seluruh penjuru nusantara. Tak hanya arti katanya, tapi 
+                    juga makna budaya di baliknya. Belajar bahasa 
+                    daerah bukan hanya soal kata, tapi juga memahami cara pandang dan jiwa masyarakatnya.
+                  </p>
+                   <p>Ayo, kenali dan pelajari bahasa daerah kita.
+                    Karena dengan memahami bahasa mereka, kita ikut menjaga identitas bangsa.
+                    Bahasa boleh berbeda, tapi cinta kita tetap sama—untuk Indonesia.
+                   <em><b>Mari kita jaga agar bahasa daerah tidak tinggal cerita.</b></em>
+                 </p>
+                 
+              </div>
+        </div>
+    </div>
+    <!-- ending tau footer -->
+    <footer>
+        <p>© 2025 Website by Azqya</p>
+        <a id="link" href="https://skilvul.com">Support By Skilvul</a> <a id="link" href="https://open.spotify.com/playlist/7D85zlIHmoVfuCTs20RR4C?si=5ece4860ea8e4053&pt=abe3f0a50fe94a36becbd3e2b50c2d03">Music</a>
+        <a id="link" href="https://www.instagram.com/qqqqq_nnisa?igsh=MW40b3JjdTk0dXVvZQ==">Instagram</a>
+        <a id="link" href="https://wa.me/message/M63NNRU5ODOSO1">Contact</a>
+    </footer>
+</body>
+</html>
