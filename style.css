@@ -288,7 +288,6 @@ h3 {
     display: flex;
     padding: 2vh;
     gap: 5vw;
-    background-color: var(--accent-3);
     height: 20vh;
     color: var(--font-color);
 } */
@@ -297,14 +296,14 @@ footer a{
     color: var(--font-color);
 }
 .footer {
-  background-color: #2e2e2e;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+    background-color: var(--accent-3);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
 }
 
 .footer-links a {
-  color: #fff;
+  color: var(--font-color);
   text-decoration: none;
   margin: 0 0.6rem;
   font-size: 1rem;
